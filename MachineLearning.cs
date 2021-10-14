@@ -124,7 +124,7 @@ namespace MachineLearning_Task1
                 k++;
 
                 if (Math.Abs(func(Data, newWeights) - prev) < eps)
-                  return Enumerable.ToArray(newWeights.Select(x => Math.Round(x, 4)));
+                  return newWeights;
                 else
                     prev = func(Data, newWeights);
             }
